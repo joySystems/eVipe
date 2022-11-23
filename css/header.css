@@ -1,0 +1,38 @@
+.header { 
+
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 50;
+
+}
+
+.header:before{
+
+    content: '';
+    
+
+}
+
+.header-container { }
+
+
+.header-body { 
+    position: relative;
+    z-index: 2;
+
+}
+.logo-wrppper { }
+.logo-link { }
+.logo { }
+.header-burger { }
+.nav-wrapper { }
+.nav-menu { }
+.menu-items { }
+.menu-item { }
+.menu-item-link { }
+.menu-item-social { }
+.menu-social-link { }
+.vk-logo { }
+.tg-logo { }
