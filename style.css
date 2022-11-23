@@ -1,1 +1,7 @@
 @import url("/css/header.css");
+
+@font-face {
+    font-family:BebasNeue;
+    src: url("/font/BebasNeueReg.ttf") format("truetype");
+    font-weight: normal;
+}
