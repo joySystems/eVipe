@@ -101,6 +101,11 @@
 
 @media screen and (max-width:767px) {
 
+body.lock{
+    overflow: hidden;
+}
+
+
 .header-body{
 
     height:50px;
@@ -128,6 +133,7 @@
         height: 2px;
         top:9px;
         left:0; 
+        transition: all 0.3s ease 0s;
     }
 
     .header-burger::before, .header-burger::after{
@@ -138,6 +144,8 @@
         width: 100%;
         height: 2px;
         left: 0;
+        transition: all 0.3s ease 0s;
+
 
     }
 
@@ -152,17 +160,42 @@
 
     }
 
+
+    .header-burger.active::before{
+       transform:rotate(45deg);
+       top:9px;
+
+    }
+
+    .header-burger.active span{
+
+        transform:scale(0);
+    }
+
+    .header-burger.active::after{
+
+        transform:rotate(-45deg);
+        bottom:9px;
+    }
+
+
     .nav-wrapper { 
         position: fixed;
-        top: 0;
+        top: -100%;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #120f3f;
-        padding: 70px 0 0 0;
+        padding: 50px 0 0 0;
         z-index: 3;
+        transition: all 0.3s ease 0s;
+        overflow:auto;
 
+    }
 
+    .nav-wrapper.active{
+
+        top:0;
     }
 
 
