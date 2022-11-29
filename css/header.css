@@ -85,6 +85,10 @@
  }
 .menu-item-social { 
     margin: 0 0 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }
 .menu-social-link {
 
