@@ -2,6 +2,12 @@
 @import url("/css/video.css");
 @import url("/css/slider.css");
 @import url("/css/review.css");
+@import url("/css/certificate.css");
+@import url("/css/footer.css");
+@import url("/css/loader.css");
+@import url("/css/gallery.css");
+@import url("/css/pages.css");
+@import url("/css/price-form.css");
 
 @font-face {
     font-family:BebasNeue;
@@ -47,6 +53,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: flex;
+  flex-direction:column;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -101,4 +109,23 @@ body {
     padding: 50px 0 0 0;
     
     margin:0 auto;
+
+    background-color:#000;
 }
+
+
+/* .evape-page{
+
+
+position: relative;
+  padding-top: 80px;
+    background-image: linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.98)),url(/img/evipe.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color:#fff;
+    overflow: hidden;
+} */

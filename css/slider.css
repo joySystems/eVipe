@@ -267,7 +267,8 @@
 
 @media(max-width: 600px) {
     .slider-section {
-        padding:7vw 0
+        padding:0;
+        padding-bottom: 7vw;
     }
 
     .slider-section .slider-block-nav  {
@@ -282,6 +283,16 @@
         font-size: 22px;
         margin: 0 15px
     }
+
+    .title-block {
+        
+        margin-bottom: 60px;
+        
+    
+     }
+
+
+
 }
 
 @-webkit-keyframes showNav {

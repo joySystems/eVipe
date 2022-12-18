@@ -1,0 +1,251 @@
+.wrapperLines {
+    transition: opacity 1.2s ease-in 0s;
+}
+
+/* @-webkit-keyframes loading {
+    0% {
+        left: 0
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+@keyframes loading {
+    0% {
+        left: 0
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+@-webkit-keyframes hidden {
+    0% {
+        opacity: 1;
+        pointer-events: auto
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none
+    }
+}
+
+@keyframes hidden {
+    0% {
+        opacity: 1;
+        pointer-events: auto
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none
+    }
+}
+ */
+
+.loaderApp { 
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 12;
+    opacity: 1;
+    visibility: visible;
+}
+.loaderApp.move {
+
+
+    -webkit-animation: hidden .5s linear 1.1s both;
+    animation: hidden .5s linear 1.1s both;
+ }
+
+
+.loaderApp .loader { 
+
+    position: absolute;
+    top: 50%;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 100px;
+    opacity: 1;
+}
+
+.loaderApp.move .loader {
+    transition: top .8s cubic-bezier(.645,.045,.355,1) .3s,opacity 0s linear 1.6s;
+    top: 150px;
+    opacity: 0;
+}
+
+.loaderApp .loader .loader-mask{
+
+     
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,.87);
+        transition: left 1s linear 0s;
+    
+ }
+
+
+ .loaderApp .maturity {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.96);
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.loaderApp .maturity.show {
+    display: flex
+}
+
+.loaderApp .maturity .main-block {
+    max-width: 340px;
+    width: 100%;
+    max-height: 300px;
+    min-height: 320px;
+    height: 100%;
+    overflow: hidden;
+    border: solid 1px #fff;
+    color: #fff;
+    display: grid;
+    grid-template-rows: .5fr .7fr;
+    align-items: center
+}
+
+.loaderApp .maturity .main-block .request {
+    margin: 20px 20px 0;
+    font-size: 40px;
+    text-align: center;
+    align-self: end
+}
+
+.loaderApp .maturity .main-block .buttons-block a {
+    text-decoration: none
+}
+
+.loaderApp .maturity .main-block .buttons-block .button {
+    border-radius: 30px;
+    height: 50px;
+    border: solid 1px #fff;
+    color: #fff;
+    max-width: 230px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.loaderApp .maturity .main-block .buttons-block .button:hover {
+    border: solid 1px #868686;
+    background-color: #868686;
+    color: #000
+}
+
+.loaderApp .maturity .main-block .security {
+    align-self: start;
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: auto 1fr
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement {
+    height: 100px;
+    padding: 10px
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox+label {
+    display: inline-flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: none;
+    font-family: Montserrat,sans-serif;
+    color: #868686
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox+label:hover {
+    color: #fff;
+    cursor: pointer
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox+label::before {
+    content: "";
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: .15em;
+    margin-right: .8em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:checked+label::before {
+    border-color: #fff;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA4IDgnPjxwYXRoIGZpbGw9J2JsYWNrJyBkPSdNNi41NjQuNzVsLTMuNTkgMy42MTItMS41MzgtMS41NUwwIDQuMjYgMi45NzQgNy4yNSA4IDIuMTkzeicvPjwvc3ZnPg==)
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #fff;
+    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:not(:disabled):active+label::before {
+    background-color: #fff;
+    border-color: #fff
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:checked+label::before {
+    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:disabled+label::before {
+    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+}
+
+.loaderApp .maturity .main-block .security .checkboxElement.error .custom-checkbox+label::before {
+    border: 1px solid rgba(147,0,0,.82);
+    box-shadow: 0 0 0 .2rem rgba(255,0,0,.25)
+}
+
+.loaderApp .maturity .main-block .security .text {
+    margin-top: 8px;
+    line-height: 1.6;
+    text-transform: none;
+    font-family: Montserrat,sans-serif
+}

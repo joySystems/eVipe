@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/assets/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/assets/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/assets/slick-theme.css" />
 </head>
 
 <body>
@@ -19,8 +22,8 @@
             <div class="header-body">
 
                 <div class="logo-wrappper">
-                    <a href="#" class="logo-link">
-                        <img src="img/vipe.svg" alt="" class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="img/vipe8.svg" alt="" class="logo">
                     </a>
                 </div>
                 <div class="header-burger">
@@ -31,7 +34,7 @@
                     <nav class="nav-menu">
                         <ul class="menu-items">
                             <li class="menu-item">
-                                <a href="#" class="menu-item-link">
+                                <a href="e-vape.html" class="menu-item-link">
                                     Электронные испарители
                                 </a>
                             </li>
@@ -64,7 +67,36 @@
             </div>
         </div>
     </header>
+    <div class="loaderApp move" id="loaderApp">
 
+        <div class="loader">
+
+            <img src="img/vipe8.svg" alt="" class="">
+            <!-- <div class="loader-mask"></div>  -->
+        </div>
+        <div class="maturity show">
+            <div class="main-block">
+
+
+                <div class="request">
+                    Вам уже исполнилось 18 лет?
+                </div>
+
+                <div class="buttons-block">
+                    <a href="#" onclick="checkMaturity()" class="">
+                        <div class="button maturityYes">Да</div>
+                    </a>
+
+                    <a href="https://yandex.ru/">
+                        <div class="button maturityNo">Нет</div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     <main class="content">
         <div class="main-container">
 
@@ -77,10 +109,7 @@
                     </video>
                     <div class="bg-filter"></div>
                 </div>
-                <div class="loader">
 
-                    <img src="img/vipe.svg" alt="" class="logo">
-                </div>
                 <div class="video-text">
                     <div class="main-title">
                         <h1>Ведущий поставщик</h1>
@@ -89,7 +118,7 @@
                     </div>
 
                     <div class="buttons-wrapper">
-                        <a class="btn">Получить прайс</a>
+                        <a class="btn get_price">Получить прайс</a>
                         <a class="btn">Поступления, цены, ассортимент</a>
                         <a class="btn">Заказать звонок</a>
                     </div>
@@ -154,7 +183,7 @@
                                 <polygon points="96.879,193.129 289.379,386.258 289.379,0 "></polygon>
                             </svg>
                         </div>
-                        <a href="#" class="active-item-name">ЖЕЛЕЗО</a>
+                        <a href="e-vape.html" class="active-item-name">ЭЛЕКТРОННЫЕ ИСПАРИТЕЛИ</a>
                         <div class="custom-next-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 386.258 386.258"
                                 style="enable-background:new 0 0 386.258 386.258;" xml:space="preserve">
@@ -173,62 +202,135 @@
                 <div class="owl-carousel owl-carousel-reviews">
 
                     <a href="#">
-                        <div class="video-item" >
+                        <div class="video-item">
                             <div class="youtube-player" data-id="123">
-                            <div data-id="123">
-                                
-                                <div class="play"></div>
+                                <div data-id="123">
+
+                                    <div class="play"></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="video-title">ОБЗОР 1</div>
                     </a>
                     <a href="#">
-                        <div class="video-item" >
+                        <div class="video-item">
                             <div class="youtube-player" data-id="123">
-                            <div data-id="123">
-                                
-                                <div class="play"></div>
+                                <div data-id="123">
+
+                                    <div class="play"></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="video-title">ОБЗОР 2</div>
                     </a>
                     <a href="#">
-                        <div class="video-item" >
+                        <div class="video-item">
                             <div class="youtube-player" data-id="123">
-                            <div data-id="123">
-                                
-                                <div class="play"></div>
+                                <div data-id="123">
+
+                                    <div class="play"></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="video-title">ОБЗОР 3</div>
                     </a>
                     <a href="#">
-                        <div class="video-item" >
+                        <div class="video-item">
                             <div class="youtube-player" data-id="123">
-                            <div data-id="123">
-                                
-                                <div class="play"></div>
+                                <div data-id="123">
+
+                                    <div class="play"></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="video-title">ОБЗОР 4</div>
                     </a>
 
-                   
+
 
                 </div>
 
             </section>
 
+            <section class="gallery">
+                <div class="title-block">
+                    <span>ГАЛЕРЕЯ ПРОДУКЦИИ</span>
+                </div>
+
+                <!-- <div class="products-gallery">
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-1.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-1.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-2.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-3-1536x1152.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-4.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-5.jpg" alt="" ></div>
+                    <div class="product"><img src="img/elektronnye-sigarety-optom-v-simferopole-6.jpg" alt="" ></div>
+                </div> -->
+
+
+                <div class="slick">
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-1.jpg)"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-1.jpg)"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-3-1536x1152.jpg)">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-4.jpg)"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-5.jpg)"></div>
+                    </div>
+                    <div class="item">
+                        <div class="bg"
+                            style="background-image:url(img/elektronnye-sigarety-optom-v-simferopole-6.jpg)"></div>
+                    </div>
+
+                </div>
+            </section>
+
             <section class="sertificate-section">
+
+                <div class="image-sertificate">
+                    <img src="img/certificate.jpg" alt="">
+                </div>
+                <div class="certificate-main">
+                    <div class="text-box">
+                        <div class="title">
+                            СЕРТИФИКАТ
+                        </div>
+                        <div class="subtitle">
+                            СООТВЕТСТВИЯ
+                        </div>
+                        <div class="descritption">
+                            Вся продукция является безопастной и оригинальной
+                        </div>
+
+                        <div class="descritption">
+                            Мы являемся поставщиком более 100 наименований продукции для вейпинга в Крыму и Севастополе, а так же в Херсонской, Запорожской, Луганской и Донецкой областях.
+                        </div>
+
+                    </div>
+                </div>
 
             </section>
 
 
+            <section class="seo-text">
+                <div class="title-block">
+                    <span>Где можно выгодно купить одноразовые электронные сигареты оптом в Крыму?</span>
+                </div>
 
+            </section>
 
         </div>
 
@@ -236,18 +338,101 @@
 
 
     <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-title">
 
+            никотин вызывает зависимость
+
+
+        </div>
+
+        <div class="footer-main">
+
+
+            <div class="content">
+                <div class="content-age">+18</div>
+                <div class="content-main">
+                    <div class="content-main-text">
+                        <p>Информация представленная на сайте компании носит исключительно ознакомительный характер</p>
+                        <p>Материалы на сайте не являются предложениями о прямой покупке или продаже продукции компании
+                        </p>
+                    </div>
+                    <!-- <div class="content-main-security">
+                        <p>политика по обработке и защите персональных данных</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="links">
+                <div class="social-link">
+                    <a href="#" class="menu-social-link">
+                        <img src="img/vk.svg" alt="" class="vk-logo">
+                    </a>
+                    <a href="#" class="menu-social-link">
+                        <img src="img/tg.png" alt="" class="tg-logo">
+                    </a>
+
+                </div>
+                <div class="copyright">
+
+                    © Electronic Vipe 2022
+                </div>
+            </div>
 
         </div>
 
     </footer>
 
 
+
+    <div class="getPrice">
+        <form class="getPriceMain" action="" method="POST">
+            
+            <div class="getPriceTitle">Получить прайс</div>
+            <div class="getPriceCompany">
+                <label for="getPriceCompanyInput">Имя</label>
+                <input type="text" id="getPriceCompanyInput" placeholder="Название компании" name="name">
+                
+            </div>
+            <div class="getPriceEmail">
+                <label for="getPriceEmailInput">Введите Ваш телефон</label>
+                <input type="text" id="getPriceEmailInput" placeholder="Ваш email" name="tell">
+            </div>
+            <div class="getPriceEmail">
+                <label for="getPriceSelect">Выбор закупки</label>
+                <select name="" id="getPriceSelect">
+                    <option value="1">Мелкий опт</option>
+                    <option value="2">Крупный опт</option>
+                </select>
+            </div>
+
+            <button class="sendPriceBtn">Получить</button>
+            <div class="getPricePersonalData">
+                Нажимая кнопку "Получить" вы принимаете <a href="#">условия обработки</a> персональных данных
+            </div>
+            <div class="closeGetPrice">
+                <span class="top"></span>
+                <span class="bot"></span>
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+
+
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/loader.js"></script>
     <script src="main.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="/js/carousel-restock.js"></script>
     <script src="/js/carousel-reviews.js"></script>
+    <script src="/js/get-price.js"></script>
+
+
 
 </body>
 
