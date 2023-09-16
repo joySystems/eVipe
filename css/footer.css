@@ -6,10 +6,11 @@
     margin: 0 auto;
     color: #fff;
     overflow: hidden;
-    padding-bottom: 30px;
+    padding: 30px 0;
 
- }
-.footer-title { 
+}
+
+.footer-title {
 
     padding: 0 15px;
     min-height: 80px;
@@ -22,16 +23,18 @@
     justify-content: center;
     text-align: center;
 }
-.footer-main { 
+
+.footer-main {
 
     margin: 0 60px;
     min-height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
-.links { 
+
+.links {
 
     display: flex;
     flex-direction: column;
@@ -39,31 +42,41 @@
     align-items: flex-start;
     max-width: 90%;
 }
+
 .social-link {
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
- }
- .footer .menu-social-link { }
- .footer .vk-logo { width: 50px;}
- .footer .tg-logo { width: 50px;}
+}
+
+.footer .menu-social-link {}
+
+.footer .vk-logo {
+    width: 50px;
+}
+
+.footer .tg-logo {
+    width: 50px;
+}
 
 
- .footer .copyright { 
+.footer .copyright {
 
     margin-top: 40px;
     font-size: 36px;
 }
-.footer .footer-main .content { 
+
+.footer .footer-main .content {
 
     display: flex;
     align-items: flex-start;
     margin: 20px;
-   gap: 20px;
+    gap: 20px;
 }
-.footer .footer-main .content-age { 
+
+.footer .footer-main .content-age {
 
     font-size: 64px;
     border: solid 2px #fff;
@@ -72,12 +85,14 @@
     font-weight: 700;
     width: 12%;
 }
+
 .footer .footer-main .content-main {
 
     display: flex;
-    
- }
- .footer .footer-main .content-main-text {
+
+}
+
+.footer .footer-main .content-main-text {
     font-size: 27px;
 }
 
@@ -85,7 +100,8 @@
 
     margin-top: 0;
 }
-.content-main-security p { 
+
+.content-main-security p {
 
     margin: 0;
     font-weight: 700;
@@ -97,25 +113,25 @@
 
 
 @media screen and (max-width: 1500px) {
-    .footer  .footer-main {
+    .footer .footer-main {
         flex-direction: column-reverse;
         margin: 15px
     }
 
-    .footer  .footer-main .links {
+    .footer .footer-main .links {
         margin: 0 20px;
-        width:100%;
+        width: 100%;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        max-width:1100px;
+        max-width: 1100px;
     }
 
-    .footer  .footer-main .links .copyright {
+    .footer .footer-main .links .copyright {
         margin-top: auto
     }
 
-    .footer  .footer-main .content {
+    .footer .footer-main .content {
         order: 1
     }
 }
@@ -126,7 +142,7 @@
 
 
 
-    .footer .footer-main .content { 
+    .footer .footer-main .content {
 
         display: flex;
         /* align-items: flex-start; */
@@ -135,33 +151,36 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
+
     }
-    .footer .footer-main .content-age { 
-    
+
+    .footer .footer-main .content-age {
+
         font-size: 44px;
-    border: solid 2px #fff;
-    border-radius: 50%;
-    padding: 10px;
-    font-weight: 700;
-    width: 24%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+        border: solid 2px #fff;
+        border-radius: 50%;
+        padding: 10px;
+        font-weight: 700;
+        width: 24%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
+
     .footer .footer-main .content-main {
-    
+
         display: flex;
         width: 100%;
-        
-     }
-     .footer .footer-main .content-main-text {
+
+    }
+
+    .footer .footer-main .content-main-text {
         font-size: 18px;
     }
 
-    .footer-title { 
+    .footer-title {
 
         padding: 0 15px;
         min-height: 80px;
@@ -176,13 +195,13 @@
     }
 
 
-    .footer  .footer-main .links {
+    .footer .footer-main .links {
         margin: 0 20px;
-        width:100%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        max-width:1100px;
+        max-width: 1100px;
     }
 
     .social-link {

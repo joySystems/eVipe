@@ -47,7 +47,7 @@
 }
  */
 
-.loaderApp { 
+.loaderApp {
 
     position: fixed;
     width: 100%;
@@ -61,53 +61,54 @@
     opacity: 1;
     visibility: visible;
 }
+
 .loaderApp.move {
 
 
     -webkit-animation: hidden .5s linear 1.1s both;
     animation: hidden .5s linear 1.1s both;
- }
+}
 
 
-.loaderApp .loader { 
+.loaderApp .loader {
 
     position: absolute;
     top: 50%;
     left: 50vw;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 300px;
     height: 100px;
     opacity: 1;
 }
 
 .loaderApp.move .loader {
-    transition: top .8s cubic-bezier(.645,.045,.355,1) .3s,opacity 0s linear 1.6s;
+    transition: top .8s cubic-bezier(.645, .045, .355, 1) .3s, opacity 0s linear 1.6s;
     top: 150px;
     opacity: 0;
 }
 
-.loaderApp .loader .loader-mask{
-
-     
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: rgba(0,0,0,.87);
-        transition: left 1s linear 0s;
-    
- }
+.loaderApp .loader .loader-mask {
 
 
- .loaderApp .maturity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .87);
+    transition: left 1s linear 0s;
+
+}
+
+
+.loaderApp .maturity {
     display: none;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.96);
+    background-color: rgba(0, 0, 0, .96);
     justify-content: center;
     align-items: center;
     padding: 20px
@@ -190,7 +191,7 @@
     font-size: 16px;
     line-height: 1.5;
     text-transform: none;
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     color: #868686
 }
 
@@ -222,7 +223,7 @@
 
 .loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
     border-color: #fff;
-    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25)
 }
 
 .loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:not(:disabled):active+label::before {
@@ -231,21 +232,21 @@
 }
 
 .loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:checked+label::before {
-    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25)
 }
 
 .loaderApp .maturity .main-block .security .checkboxElement .custom-checkbox:disabled+label::before {
-    box-shadow: 0 0 0 .2rem rgba(255,255,255,.25)
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25)
 }
 
 .loaderApp .maturity .main-block .security .checkboxElement.error .custom-checkbox+label::before {
-    border: 1px solid rgba(147,0,0,.82);
-    box-shadow: 0 0 0 .2rem rgba(255,0,0,.25)
+    border: 1px solid rgba(147, 0, 0, .82);
+    box-shadow: 0 0 0 .2rem rgba(255, 0, 0, .25)
 }
 
 .loaderApp .maturity .main-block .security .text {
     margin-top: 8px;
     line-height: 1.6;
     text-transform: none;
-    font-family: Montserrat,sans-serif
+    font-family: Montserrat, sans-serif
 }

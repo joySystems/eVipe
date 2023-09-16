@@ -1,181 +1,183 @@
-.video-section { 
+.video-section {
 
-position: relative;
-width: 100%;
-max-width: 1920px;
-height:calc(100vh - 70px);
-max-height: 1080px;
-margin:0 auto;
-color: #fff;
-min-height: 650px;
+   position: relative;
+   width: 100%;
+   max-width: 1920px;
+   height: calc(100vh - 70px);
+   max-height: 1080px;
+   margin: 0 auto;
+   color: #fff;
+   min-height: 650px;
 
 
 }
+
 .video-bg {
 
-    position:absolute;
-    top:0;
-    left: 0;
-    bottom:0;
-    right: 0;
-    z-index: 1;
-    overflow:hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 1;
+   overflow: hidden;
 
-    
- }
 
- .bg-filter {
+}
 
-position:absolute;
-top:0;
-bottom: 0;
-left:0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.42);
+.bg-filter {
 
- }
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.42);
 
- .loader{
+}
 
-    position:absolute;
-    top:100px;
-    left:calc(50vw - 200px);
-    z-index: 1;
-    width: 400px;
- }
+.loader {
 
-.video-src { 
+   position: absolute;
+   top: 100px;
+   left: calc(50vw - 200px);
+   z-index: 1;
+   width: 400px;
+}
 
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    object-fit: cover;
+.video-src {
+
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
 }
 
 
 
-.video-text { 
+.video-text {
 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-    align-items: center;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 1;
+   align-items: center;
 }
 
-.main-title { 
+.main-title {
 
-    text-align: center;
-    line-height: 1;
+   text-align: center;
+   line-height: 1;
 }
 
-.main-title h1 { 
+.main-title h1 {
 
    font-size: 100px;
    margin-top: 115px;
 }
 
-.main-title span { 
+.main-title span {
 
-    font-size: 60px;
-    
- }
+   font-size: 60px;
+
+}
 
 
 .buttons-wrapper {
 
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    margin: 40px auto;
-    width:80%;
- }
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin: 40px auto;
+   width: 80%;
+}
+
 .btn {
 
-    cursor: pointer;
-    padding:25px 40px 20px;
-    margin:20px 20px 0;
-    border: #fff solid 1px;
-    border-radius: 5px;
-    font-size: 32px;
-    background-color: rgba(0,0,0,0);
-    color: #fff;
+   cursor: pointer;
+   padding: 25px 40px 20px;
+   margin: 20px 20px 0;
+   border: #fff solid 1px;
+   border-radius: 5px;
+   font-size: 32px;
+   background-color: rgba(0, 0, 0, 0);
+   color: #fff;
 
- }
-
-
- .btn:hover{
-
-    background-color: rgba(255,255,255,.27);
- }
+}
 
 
- @media screen and (max-width:767px) {
-    
+.btn:hover {
 
-    .buttons-wrapper {
-
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        align-items: center;
-        margin: 40px auto;
-        width:80%;
-     }
+   background-color: rgba(255, 255, 255, .27);
+}
 
 
-     .main-title h1 { 
+@media screen and (max-width:767px) {
+
+
+   .buttons-wrapper {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px auto;
+      width: 80%;
+   }
+
+
+   .main-title h1 {
 
       font-size: 72px;
       margin-top: 115px;
    }
-   
+
 }
 
 
 @media screen and (max-width:520px) {
-    
+
 
    .buttons-wrapper {
 
-       display:flex;
-       flex-direction:column;
-       justify-content:space-between;
-       align-items: center;
-       margin: 40px auto;
-       width:80%;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px auto;
+      width: 80%;
+   }
 
 
-    .main-title h1 { 
+   .main-title h1 {
 
-      font-size: 51px;
+      font-size: 46px;
       margin-top: 0px;
       margin-bottom: 20px;
-  }
+   }
 
-  .main-title span { 
+   .main-title span {
 
-   font-size: 36px;
-   
-}
+      font-size: 36px;
 
-.btn {
-   cursor: pointer;
-   padding: 20px 20px 20px;
-   margin: 20px 20px 0;
-   border: #fff solid 1px;
-   border-radius: 5px;
-   font-size: 25px;
-   background-color: rgba(0,0,0,0);
-   color: #fff;
-   text-align: center;
-}
-  
+   }
+
+   .btn {
+      cursor: pointer;
+      padding: 20px 20px 20px;
+      margin: 20px 20px 0;
+      border: #fff solid 1px;
+      border-radius: 5px;
+      font-size: 25px;
+      background-color: rgba(0, 0, 0, 0);
+      color: #fff;
+      text-align: center;
+   }
+
 }

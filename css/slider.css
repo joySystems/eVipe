@@ -1,15 +1,15 @@
 .slider-section {
-    
+
     position: relative;
     background-color: #000;
     max-width: 1920px;
     margin: 0 auto;
     color: #fff;
     padding-bottom: 50px;
-    
- }
 
- .slider-section .owl-stage-outer {
+}
+
+.slider-section .owl-stage-outer {
     overflow: visible
 }
 
@@ -66,17 +66,15 @@
     width: 100%;
     box-sizing: border-box;
 
- }
-.slider { }
-
-.owl-carousel { }
-
-.owl-carousel-lines{
-
-
 }
 
-.owl-carousel .item{
+.slider {}
+
+.owl-carousel {}
+
+.owl-carousel-lines {}
+
+.owl-carousel .item {
     margin: 0 30px;
     transition: all .5s ease;
     opacity: .5;
@@ -89,7 +87,7 @@
 
 }
 
-.center .item{
+.center .item {
 
     pointer-events: auto;
     margin: 0 30px;
@@ -97,27 +95,27 @@
     cursor: pointer;
 }
 
-.item .slider-item-img{
-    
-    
+.item .slider-item-img {
+
+
     position: relative;
 }
 
 
-.item .slider-item-img img{
+.item .slider-item-img img {
     transition: all .5s ease;
     height: 100%;
     transform: scale(.7);
 }
 
-.center .item .slider-item-img img{
+.center .item .slider-item-img img {
     transition: all .5s ease;
     transform: scale(1);
 }
 
 
 
-.item .slider-item-img .line-border{
+.item .slider-item-img .line-border {
     position: absolute;
     z-index: -1;
     top: 25px;
@@ -133,7 +131,7 @@
     border-color: #fff
 }
 
-.slider-block-nav { 
+.slider-block-nav {
 
     margin-top: 30px;
     display: flex;
@@ -144,14 +142,15 @@
     opacity: 0;
 }
 
-.slider-block-nav.active{
+.slider-block-nav.active {
 
     -webkit-animation: showNav .5s ease 0s both;
     animation: showNav .5s ease 0s both;
 
-    
+
 }
-.custom-prev-btn { 
+
+.custom-prev-btn {
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -162,6 +161,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .active-item-name {
 
     display: flex;
@@ -170,10 +170,10 @@
     color: #fff;
     text-decoration: none;
     position: relative;
- }
+}
 
 
- .active-item-name:before{
+.active-item-name:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -182,9 +182,9 @@
     transform: translateX(-50%);
     height: 0;
     border-bottom: #fff solid 2px;
- }
+}
 
- .slider-block-nav .active-item-name:hover {
+.slider-block-nav .active-item-name:hover {
     transition: width .5s ease 0s;
     transform: scale(1.1)
 }
@@ -193,8 +193,8 @@
     transition: width .3s ease 0s;
     width: 100%
 }
- 
-.custom-next-btn { 
+
+.custom-next-btn {
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -207,14 +207,16 @@
 }
 
 
-.custom-prev-btn svg, .custom-next-btn svg{
+.custom-prev-btn svg,
+.custom-next-btn svg {
     width: 3vw;
     max-width: 24px;
     min-width: 18px;
 }
 
 
-.custom-next-btn:hover,.custom-prev-btn:hover {
+.custom-next-btn:hover,
+.custom-prev-btn:hover {
     fill: #fff
 }
 
@@ -230,7 +232,7 @@
     width: calc((100vw - 1520px)/2);
     height: 100%;
     background: #000;
-    background: linear-gradient(90deg,#000 0,rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, #000 0, rgba(0, 0, 0, 0) 100%);
     pointer-events: none
 }
 
@@ -242,20 +244,21 @@
     width: calc((100vw - 1520px)/2);
     height: 100%;
     background: #000;
-    background: linear-gradient(90deg,rgba(0,0,0,0) 0,#000 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 100%);
     pointer-events: none
 }
 
 @media(max-width: 991px) {
     .slider-section {
-        padding:5vw 0
+        padding: 5vw 0
     }
 
     .slider-section .slider-block-nav {
         margin-top: 4vw
     }
 
-    .slider-section .slider-block-nav .custom-next-btn,.slider-section .slider-block-nav .custom-prev-btn {
+    .slider-section .slider-block-nav .custom-next-btn,
+    .slider-section .slider-block-nav .custom-prev-btn {
         font-size: 8vw
     }
 
@@ -267,15 +270,16 @@
 
 @media(max-width: 600px) {
     .slider-section {
-        padding:0;
+        padding: 0;
         padding-bottom: 7vw;
     }
 
-    .slider-section .slider-block-nav  {
+    .slider-section .slider-block-nav {
         margin-top: 6vw
     }
 
-    .slider-section .slider-block-nav .custom-next-btn,.slider-section .slider-block-nav .custom-prev-btn {
+    .slider-section .slider-block-nav .custom-next-btn,
+    .slider-section .slider-block-nav .custom-prev-btn {
         font-size: 50px
     }
 
@@ -285,11 +289,21 @@
     }
 
     .title-block {
-        
-        margin-bottom: 60px;
-        
-    
-     }
+        margin-bottom: 0;
+    }
+
+
+    .owl-carousel .item {
+        margin: 0;
+
+
+    }
+
+    .center .item {
+
+        margin: 0;
+    }
+
 
 
 

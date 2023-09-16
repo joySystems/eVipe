@@ -13,7 +13,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    background-color: rgba(0,0,0,.85);
+    background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     pointer-events: none;
@@ -117,7 +117,7 @@
     font-family: sans-serif;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: inset 2px 2px 2px 0 rgba(255,255,255,.5),7px 7px 20px 0 rgba(0,0,0,.1),4px 4px 5px 0 rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
     outline: 0;
     background: #ff4f4f
 }
@@ -248,14 +248,15 @@
     transform: rotate(45deg) scale(2)
 }
 
-.getPrice .getPriceMain .closeGetPrice .bot,.getPrice .getPriceMain .closeGetPrice .top {
+.getPrice .getPriceMain .closeGetPrice .bot,
+.getPrice .getPriceMain .closeGetPrice .top {
     display: block;
     background: #7e7e7e;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
-    animation-timing-function: cubic-bezier(1,0,0,1);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1
 }
@@ -281,13 +282,13 @@
 }
 
 .getPrice .getPriceMain .closeGetPrice:hover .top {
-    -webkit-animation: top-out .25s forwards,top-in .25s forwards .25s;
-    animation: top-out .25s forwards,top-in .25s forwards .25s
+    -webkit-animation: top-out .25s forwards, top-in .25s forwards .25s;
+    animation: top-out .25s forwards, top-in .25s forwards .25s
 }
 
 .getPrice .getPriceMain .closeGetPrice:hover .bot {
-    -webkit-animation: bot-out .25s forwards .1s,bot-in .25s forwards .35s;
-    animation: bot-out .25s forwards .1s,bot-in .25s forwards .35s
+    -webkit-animation: bot-out .25s forwards .1s, bot-in .25s forwards .35s;
+    animation: bot-out .25s forwards .1s, bot-in .25s forwards .35s
 }
 
 .getPrice .getPriceMain .getPriceDecor {

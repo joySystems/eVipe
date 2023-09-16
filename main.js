@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+  $('#info_text').click(function(){
+
+$('.info-text_content').toggleClass('visually-hidden', 1000);
+
+
+  });
+
 $('.header-burger').click(function(event){
 
 
@@ -59,8 +66,8 @@ $('.products-gallery').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         },
         {
