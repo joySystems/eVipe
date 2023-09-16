@@ -1,19 +1,19 @@
-@import url("/css/header.css");
-@import url("/css/video.css");
-@import url("/css/slider.css");
-@import url("/css/review.css");
-@import url("/css/certificate.css");
-@import url("/css/footer.css");
-@import url("/css/loader.css");
-@import url("/css/gallery.css");
-@import url("/css/pages.css");
-@import url("/css/price-form.css");
-@import url("/css/news.css");
-@import url("/css/info-text.css");
+@import url("./css/header.css");
+@import url("./css/video.css");
+@import url("./css/slider.css");
+@import url("./css/review.css");
+@import url("./css/certificate.css");
+@import url("./css/footer.css");
+@import url("./css/loader.css");
+@import url("./css/gallery.css");
+@import url("./css/pages.css");
+@import url("./css/price-form.css");
+@import url("./css/news.css");
+@import url("./css/info-text.css");
 
 @font-face {
     font-family:BebasNeue;
-    src: url("/font/BebasNeueReg.ttf") format("truetype");
+    src: url("./font/BebasNeueReg.ttf") format("truetype");
     font-weight: normal;
 }
 

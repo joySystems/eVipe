@@ -28,7 +28,7 @@
             a.setAttribute("data-id", n);
             var o = document.createElement("img");
             //o.src = "//i.ytimg.com/vi/ID/maxresdefault.jpg".replace("ID", n),
-            o.src = "../img/maxresdefault.jpg"
+            o.src = "./img/maxresdefault.jpg"
             a.appendChild(o);
             var d = document.createElement("div");
             d.setAttribute("class", "play"),
